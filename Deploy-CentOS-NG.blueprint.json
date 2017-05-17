@@ -1,0 +1,641 @@
+{
+    "tasks":[
+        {
+            "vm_name":"CentOS NG",
+            "memory_mb":"2048",
+            "network_uuid":"dbc1831d-0650-41c5-9b9c-ae012fde58ea",
+            "uid":"591cd69ee138230ba2496b52",
+            "classification":"provision_nutanix",
+            "num_cores_per_vcpu":"2",
+            "fixed_cost":0.0,
+            "vm_disk_uuid":"31bacefd-9879-462d-8be8-cfe7e774efba",
+            "creation_time":1495062174,
+            "variable_cost":0.0,
+            "num_vcpus":"1",
+            "credential_id":"591cd69ee138230ba2496b54",
+            "modification_time":1495063582,
+            "vdisks":[
+
+            ],
+            "version":7,
+            "critical":true,
+            "editables":[
+
+            ],
+            "name":"Provision Nutanix"
+        },
+        {
+            "uid":"591cd7e2e138230bb51cb2db",
+            "classification":"runshell",
+            "script":"systemctl disable packageitd\nyum -y install httpd",
+            "creation_time":1495062498,
+            "credential_id":null,
+            "modification_time":1495063582,
+            "version":7,
+            "critical":false,
+            "editables":[
+
+            ],
+            "name":"install apache"
+        },
+        {
+            "uid":"591cd816e138230bb51cb325",
+            "classification":"runshell",
+            "script":"systemctl disable packageitd\nyum -y install mariadb-server mariadb",
+            "creation_time":1495062550,
+            "credential_id":null,
+            "modification_time":1495063582,
+            "version":6,
+            "critical":false,
+            "editables":[
+
+            ],
+            "name":"install mysql"
+        },
+        {
+            "uid":"591cd835e138230bb51cb36b",
+            "classification":"runshell",
+            "script":"systemctl disable packageitd\nyum -y install php",
+            "creation_time":1495062581,
+            "credential_id":null,
+            "modification_time":1495063582,
+            "version":5,
+            "critical":false,
+            "editables":[
+
+            ],
+            "name":"install php"
+        },
+        {
+            "uid":"591cdb0de138230ba249725d",
+            "classification":"profile_action_task",
+            "creation_time":1495063309,
+            "credential_id":null,
+            "modification_time":1495063582,
+            "version":3,
+            "critical":true,
+            "editables":[
+
+            ],
+            "action":"create",
+            "name":"Provider Create Task"
+        },
+        {
+            "vm_name":"CentOS NG",
+            "memory_mb":"2048",
+            "network_uuid":"dbc1831d-0650-41c5-9b9c-ae012fde58ea",
+            "uid":"591cdc1ee138230bb51cba83",
+            "classification":"provision_nutanix",
+            "num_cores_per_vcpu":"2",
+            "fixed_cost":0.0,
+            "vm_disk_uuid":"31bacefd-9879-462d-8be8-cfe7e774efba",
+            "creation_time":1495062174,
+            "variable_cost":0.0,
+            "num_vcpus":"1",
+            "credential_id":"591cd69ee138230ba2496b54",
+            "modification_time":1495063582,
+            "vdisks":[
+
+            ],
+            "version":6,
+            "critical":true,
+            "editables":[
+
+            ],
+            "name":"Provision Nutanix"
+        },
+        {
+            "uid":"591cdc1ee138230bb51cba84",
+            "classification":"runshell",
+            "script":"systemctl disable packageitd\nyum -y install httpd",
+            "creation_time":1495062498,
+            "credential_id":null,
+            "modification_time":1495063582,
+            "version":6,
+            "critical":false,
+            "editables":[
+
+            ],
+            "name":"install apache"
+        },
+        {
+            "uid":"591cdc1ee138230bb51cba85",
+            "classification":"runshell",
+            "script":"systemctl disable packageitd\nyum -y install mariadb-server mariadb",
+            "creation_time":1495062550,
+            "credential_id":null,
+            "modification_time":1495063582,
+            "version":5,
+            "critical":false,
+            "editables":[
+
+            ],
+            "name":"install mysql"
+        },
+        {
+            "uid":"591cdc1ee138230bb51cba86",
+            "classification":"runshell",
+            "script":"systemctl disable packageitd\nyum -y install php",
+            "creation_time":1495062581,
+            "credential_id":null,
+            "modification_time":1495063582,
+            "version":4,
+            "critical":false,
+            "editables":[
+
+            ],
+            "name":"install php"
+        },
+        {
+            "uid":"591cdc1ee138230bb51cba78",
+            "classification":"profile_action_task",
+            "creation_time":1495063309,
+            "credential_id":null,
+            "modification_time":1495063582,
+            "version":2,
+            "critical":true,
+            "editables":[
+
+            ],
+            "action":"create",
+            "name":"Provider Create Task"
+        },
+        {
+            "uid":"591cdc1ee138230bb51cba7a",
+            "classification":"runshell",
+            "script":"systemctl disable packageitd\nyum -y install httpd",
+            "creation_time":1495062498,
+            "credential_id":null,
+            "modification_time":1495063582,
+            "version":6,
+            "critical":false,
+            "editables":[
+
+            ],
+            "name":"install apache"
+        },
+        {
+            "uid":"591cdc1ee138230bb51cba7c",
+            "classification":"runshell",
+            "script":"systemctl disable packageitd\nyum -y install mariadb-server mariadb",
+            "creation_time":1495062550,
+            "credential_id":null,
+            "modification_time":1495063582,
+            "version":5,
+            "critical":false,
+            "editables":[
+
+            ],
+            "name":"install mysql"
+        },
+        {
+            "uid":"591cdc1ee138230bb51cba7e",
+            "classification":"runshell",
+            "script":"systemctl disable packageitd\nyum -y install php",
+            "creation_time":1495062581,
+            "credential_id":null,
+            "modification_time":1495063582,
+            "version":4,
+            "critical":false,
+            "editables":[
+
+            ],
+            "name":"install php"
+        }
+    ],
+    "uid":"591cd69ee138230ba2496b58",
+    "classification":"blueprint",
+    "autoscale_config":{
+        "post_flow":null,
+        "cool_down_period":"1800",
+        "uid":"591cd69ee138230ba2496b6b",
+        "classification":null,
+        "alert_count":"1",
+        "max_count":"1",
+        "pre_flow":null,
+        "min_count":"1",
+        "listen_for":"external",
+        "scale_by":"1",
+        "alert_window":"1800"
+    },
+    "profiles":[
+        {
+            "cost":0.0,
+            "uid":"591cd69ee138230ba2496b53",
+            "classification":"resource_profile",
+            "service_port":22,
+            "address":"@@{vm_ip}@@",
+            "creation_time":1495062174,
+            "modification_time":1495063582,
+            "version":7,
+            "provider":"591cd69ee138230ba2496b52",
+            "service_type":"ssh",
+            "automatic_cost":false,
+            "os_type":"Linux",
+            "properties":[
+
+            ],
+            "name":"Provider 1"
+        },
+        {
+            "cost":0.0,
+            "uid":"591cdc1ee138230bb51cba82",
+            "classification":"resource_profile",
+            "service_port":22,
+            "address":"@@{vm_ip}@@",
+            "creation_time":1495062174,
+            "modification_time":1495063582,
+            "version":6,
+            "provider":"591cdc1ee138230bb51cba83",
+            "service_type":"ssh",
+            "automatic_cost":false,
+            "os_type":"Linux",
+            "properties":[
+
+            ],
+            "name":"Provider 1"
+        }
+    ],
+    "strategy_enabled":false,
+    "replaced_tasks":{
+
+    },
+    "environment":"default",
+    "config":{
+        "setup":[
+
+        ],
+        "uid":"591cd69ee138230ba2496b6c",
+        "classification":null,
+        "deploy":[
+
+        ]
+    },
+    "calm-version":"1.8.3",
+    "description":null,
+    "parent":null,
+    "flows":[
+        {
+            "tasks":[
+                {
+                    "uid":"591cdb0de138230ba2497266",
+                    "classification":null,
+                    "work_type":"PROFILE",
+                    "target_id":"cid:00000001",
+                    "target_type":"RESOURCE",
+                    "work_id":"591cdb0de138230ba249725d"
+                },
+                {
+                    "uid":"591cdb0de138230ba2497268",
+                    "classification":null,
+                    "work_type":"TASK",
+                    "target_id":"cid:00000001",
+                    "target_type":"RESOURCE",
+                    "work_id":"591cd7e2e138230bb51cb2db"
+                },
+                {
+                    "uid":"591cdb0de138230ba249726a",
+                    "classification":null,
+                    "work_type":"TASK",
+                    "target_id":"cid:00000001",
+                    "target_type":"RESOURCE",
+                    "work_id":"591cd816e138230bb51cb325"
+                },
+                {
+                    "uid":"591cdb0de138230ba249726c",
+                    "classification":null,
+                    "work_type":"TASK",
+                    "target_id":"cid:00000001",
+                    "target_type":"RESOURCE",
+                    "work_id":"591cd835e138230bb51cb36b"
+                },
+                {
+                    "uid":"591cdc1ee138230bb51cba76",
+                    "classification":null,
+                    "work_type":"PROFILE",
+                    "target_id":"cid:00000002",
+                    "target_type":"RESOURCE",
+                    "work_id":"591cdc1ee138230bb51cba78"
+                },
+                {
+                    "uid":"591cdc1ee138230bb51cba79",
+                    "classification":null,
+                    "work_type":"TASK",
+                    "target_id":"cid:00000002",
+                    "target_type":"RESOURCE",
+                    "work_id":"591cdc1ee138230bb51cba7a"
+                },
+                {
+                    "uid":"591cdc1ee138230bb51cba7b",
+                    "classification":null,
+                    "work_type":"TASK",
+                    "target_id":"cid:00000002",
+                    "target_type":"RESOURCE",
+                    "work_id":"591cdc1ee138230bb51cba7c"
+                },
+                {
+                    "uid":"591cdc1ee138230bb51cba7d",
+                    "classification":null,
+                    "work_type":"TASK",
+                    "target_id":"cid:00000002",
+                    "target_type":"RESOURCE",
+                    "work_id":"591cdc1ee138230bb51cba7e"
+                }
+            ],
+            "uid":"cid:00000003",
+            "classification":null,
+            "eta":-1,
+            "creation_time":1495063347,
+            "edges":[
+                {
+                    "dest":"591cdb0de138230ba2497268",
+                    "src":"591cdb0de138230ba2497266",
+                    "uid":"591cdb0de138230ba249726d",
+                    "classification":null
+                },
+                {
+                    "dest":"591cdb0de138230ba249726a",
+                    "src":"591cdb0de138230ba2497268",
+                    "uid":"591cdb0de138230ba249726e",
+                    "classification":null
+                },
+                {
+                    "dest":"591cdb0de138230ba249726c",
+                    "src":"591cdb0de138230ba249726a",
+                    "uid":"591cdb0de138230ba249726f",
+                    "classification":null
+                },
+                {
+                    "dest":"591cdc1ee138230bb51cba79",
+                    "src":"591cdc1ee138230bb51cba76",
+                    "uid":"591cdc1ee138230bb51cba7f",
+                    "classification":null
+                },
+                {
+                    "dest":"591cdc1ee138230bb51cba7b",
+                    "src":"591cdc1ee138230bb51cba79",
+                    "uid":"591cdc1ee138230bb51cba80",
+                    "classification":null
+                },
+                {
+                    "dest":"591cdc1ee138230bb51cba7d",
+                    "src":"591cdc1ee138230bb51cba7b",
+                    "uid":"591cdc1ee138230bb51cba81",
+                    "classification":null
+                }
+            ],
+            "has_critical_tasks":true,
+            "modification_time":1495063582,
+            "version":0,
+            "flow_type":"ACTION",
+            "critical":true,
+            "name":"create-action"
+        }
+    ],
+    "dependencies":[
+
+    ],
+    "credentials":[
+        {
+            "username":"root",
+            "public_key":null,
+            "uid":"591cd69ee138230ba2496b54",
+            "classification":null,
+            "secret_type":"password",
+            "creation_time":1495062174,
+            "modification_time":1495063582,
+            "secret":null,
+            "version":7,
+            "name":"centos"
+        }
+    ],
+    "bp_id":null,
+    "properties":[
+
+    ],
+    "autoscale_enabled":false,
+    "name":"Deploy CentOS NG",
+    "setup_ids":{
+
+    },
+    "h":0.0,
+    "resiliency_config":{
+        "post_flow":null,
+        "cool_down_period":"1800",
+        "alert_window":"1800",
+        "classification":null,
+        "alert_count":"1",
+        "pre_flow":null,
+        "listen_for":"internal",
+        "uid":"591cd69ee138230ba2496b6d"
+    },
+    "current_profile":null,
+    "resiliency_enabled":false,
+    "architecture":[
+        {
+            "tasks":[
+
+            ],
+            "uid":"cid:00000001",
+            "classification":"compute",
+            "autoscale_config":{
+                "post_flow":null,
+                "cool_down_period":"1800",
+                "uid":"591cd69ee138230ba2496b60",
+                "classification":null,
+                "alert_count":"1",
+                "max_count":"1",
+                "pre_flow":null,
+                "min_count":"1",
+                "listen_for":"external",
+                "scale_by":"1",
+                "alert_window":"1800"
+            },
+            "profiles":[
+                "591cd69ee138230ba2496b53"
+            ],
+            "strategy_enabled":false,
+            "config":{
+                "setup":[
+
+                ],
+                "uid":"591cd69ee138230ba2496b63",
+                "classification":null,
+                "deploy":[
+                    "591cd7e2e138230bb51cb2db",
+                    "591cd816e138230bb51cb325",
+                    "591cd835e138230bb51cb36b"
+                ]
+            },
+            "parent":"591cd69ee138230ba2496b58",
+            "flows":[
+
+            ],
+            "dependencies":[
+
+            ],
+            "bp_id":"591cd69ee138230ba2496b58",
+            "properties":[
+
+            ],
+            "autoscale_enabled":false,
+            "name":"Service 1",
+            "h":0.0,
+            "resiliency_config":{
+                "post_flow":null,
+                "cool_down_period":"1800",
+                "alert_window":"1800",
+                "classification":null,
+                "alert_count":"1",
+                "pre_flow":null,
+                "listen_for":"internal",
+                "uid":"591cd69ee138230ba2496b61"
+            },
+            "current_profile":"591cd69ee138230ba2496b53",
+            "resiliency_enabled":false,
+            "w":0.0,
+            "strategy_config":{
+                "post_flow":null,
+                "rollback_pre_flow":null,
+                "classification":null,
+                "rolling_factor":"100",
+                "initial_version":null,
+                "approval_flag":false,
+                "upgrade_flow":null,
+                "rollback_flow":null,
+                "pre_flow":null,
+                "rollback_post_flow":null,
+                "upgrade_type":"rolling_upgrade",
+                "uid":"591cd69ee138230ba2496b62",
+                "users":[
+
+                ],
+                "teams":[
+
+                ],
+                "emails":[
+
+                ],
+                "initial_count":"1"
+            },
+            "y":187.0,
+            "x":234.0
+        },
+        {
+            "tasks":[
+
+            ],
+            "uid":"cid:00000002",
+            "classification":"compute",
+            "autoscale_config":{
+                "post_flow":null,
+                "cool_down_period":"1800",
+                "uid":"591cd69ee138230ba2496b60",
+                "classification":null,
+                "alert_count":"1",
+                "max_count":"1",
+                "pre_flow":null,
+                "min_count":"1",
+                "listen_for":"external",
+                "scale_by":"1",
+                "alert_window":"1800"
+            },
+            "profiles":[
+                "591cdc1ee138230bb51cba82"
+            ],
+            "strategy_enabled":false,
+            "config":{
+                "setup":[
+
+                ],
+                "uid":"591cd69ee138230ba2496b63",
+                "classification":null,
+                "deploy":[
+                    "591cdc1ee138230bb51cba84",
+                    "591cdc1ee138230bb51cba85",
+                    "591cdc1ee138230bb51cba86"
+                ]
+            },
+            "parent":"591cd69ee138230ba2496b58",
+            "flows":[
+
+            ],
+            "dependencies":[
+
+            ],
+            "bp_id":"591cd69ee138230ba2496b58",
+            "properties":[
+
+            ],
+            "autoscale_enabled":false,
+            "name":"Clone 1 of Service 1",
+            "h":0.0,
+            "resiliency_config":{
+                "post_flow":null,
+                "cool_down_period":"1800",
+                "alert_window":"1800",
+                "classification":null,
+                "alert_count":"1",
+                "pre_flow":null,
+                "listen_for":"internal",
+                "uid":"591cd69ee138230ba2496b61"
+            },
+            "current_profile":"591cdc1ee138230bb51cba82",
+            "resiliency_enabled":false,
+            "w":0.0,
+            "strategy_config":{
+                "post_flow":null,
+                "rollback_pre_flow":null,
+                "classification":null,
+                "rolling_factor":"100",
+                "initial_version":null,
+                "approval_flag":false,
+                "upgrade_flow":null,
+                "rollback_flow":null,
+                "pre_flow":null,
+                "rollback_post_flow":null,
+                "upgrade_type":"rolling_upgrade",
+                "uid":"591cd69ee138230ba2496b62",
+                "users":[
+
+                ],
+                "teams":[
+
+                ],
+                "emails":[
+
+                ],
+                "initial_count":"1"
+            },
+            "y":187.0,
+            "x":495.0
+        }
+    ],
+    "w":0.0,
+    "strategy_config":{
+        "post_flow":null,
+        "rollback_pre_flow":null,
+        "classification":null,
+        "rolling_factor":"100",
+        "initial_version":null,
+        "approval_flag":false,
+        "upgrade_flow":null,
+        "rollback_flow":null,
+        "pre_flow":null,
+        "rollback_post_flow":null,
+        "upgrade_type":"rolling_upgrade",
+        "uid":"591cd69ee138230ba2496b6e",
+        "users":[
+
+        ],
+        "teams":[
+
+        ],
+        "emails":[
+
+        ],
+        "initial_count":"1"
+    },
+    "y":0.0,
+    "x":0.0
+}
