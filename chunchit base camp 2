@@ -1,0 +1,5 @@
+#Calm Deploy Apache, MySQL and PHP
+systemctl disable packageitd
+yum -y install httpd
+yum -y install mariadb-server mariadb
+yum -y install php

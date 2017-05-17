@@ -1,0 +1,14 @@
+#Guest OS rename
+sshpass -p 'nutanix/4u' ssh root@10.68.69.12 hostnamectl set-hostname hostname
+
+#Ensure all packages are up to date
+sshpass -p 'nutanix/4u' ssh root@10.68.69.12 yum update -y
+
+#VM rename
+curl --insecure -X PUT \
+  https://10.68.69.102:9440/api/nutanix/v2.0/vms/$VM_UUID/ \
+  -H 'authorization: Basic YWRtaW46bnV0YW5peC80dQ==' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: fc0d8705-93d8-590c-2549-0d66049ed92d' \
+  -d '{"name": "$new_VM_name"}'
